@@ -34,7 +34,7 @@ const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) => {
 
                 <div className="p-6 space-y-4 text-sm sm:text-base leading-relaxed text-gray-600">
                     <p>
-                        <strong className="text-brand-dark">BulkHEIC</strong> est conçu avec une philosophie "Local-First".
+                        <strong className="text-brand-dark">bulkheic</strong> est conçu avec une philosophie "Local-First".
                     </p>
 
                     <div className="bg-brand-secondary/5 p-4 rounded-lg border border-brand-secondary/10">

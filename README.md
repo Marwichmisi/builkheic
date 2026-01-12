@@ -1,10 +1,10 @@
-# BulkHEIC - Convertisseur HEIC Local-First
+# bulkheic - Convertisseur HEIC Local-First
 
-**BulkHEIC** est une application web moderne permettant de convertir des images HEIC (High Efficiency Image Container) en formats JPG ou PNG universels.
+**bulkheic** est une application web moderne permettant de convertir des images HEIC (High Efficiency Image Container) en formats JPG ou PNG universels.
 
-La particularité de BulkHEIC est son architecture **"Local-First"** : toutes les conversions sont effectuées directement dans le navigateur de l'utilisateur grâce à WebAssembly (WASM) et aux Web Workers. **Aucune image n'est jamais envoyée vers un serveur**, garantissant une confidentialité totale et des coûts d'infrastructure nuls.
+La particularité de bulkheic est son architecture **"Local-First"** : toutes les conversions sont effectuées directement dans le navigateur de l'utilisateur grâce à WebAssembly (WASM) et aux Web Workers. **Aucune image n'est jamais envoyée vers un serveur**, garantissant une confidentialité totale et des coûts d'infrastructure nuls.
 
-![BulkHEIC Interface](https://via.placeholder.com/800x400?text=BulkHEIC+Interface)
+![bulkheic Interface](https://via.placeholder.com/800x400?text=bulkheic+Interface)
 
 ## 🚀 Fonctionnalités Clés
 
@@ -54,7 +54,7 @@ window.AppConfig = {
   ads: { ... }, // Configuration Ads
   seo: {
     footerText: "Texte SEO modifiable ici...",
-    footerCopyright: "BulkHEIC ©"
+    footerCopyright: "bulkheic ©"
   }
 };
 \`\`\`
@@ -70,4 +70,4 @@ Ce projet est une **Static Web App**. Le dossier `dist/` généré peut être h�
 **Note importante pour le déploiement** : Assurez-vous que le serveur sert correctement les fichiers `.wasm` avec le type MIME `application/wasm`.
 
 ---
-*Développé avec ❤️ par l'équipe BulkHEIC.*
+*Développé avec ❤️ par l'équipe bulkheic.*

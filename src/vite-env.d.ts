@@ -17,8 +17,9 @@ declare global {
                 debug: boolean;
             };
             seo: {
-                footerText: string;
                 footerCopyright: string;
+                descriptionTitle: string;
+                descriptionText: string;
             };
         };
     }

@@ -54,7 +54,7 @@ function App() {
         <div className="max-w-2xl mx-auto space-y-8 animate-fade-in">
           <div className="text-center space-y-3">
             <h1 className="text-4xl font-black text-brand-dark tracking-tight">
-              Bienvenue sur <span className="text-brand-accent">BulkHEIC</span>
+              Bienvenue sur <span className="text-brand-accent">bulkheic</span>
             </h1>
             <p className="text-gray-500 font-medium">
               Le convertisseur de masse ultra-rapide et sécurisé.

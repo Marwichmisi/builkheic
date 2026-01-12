@@ -22,7 +22,17 @@ window.AppConfig = {
   },
   // SEO & Text Content
   seo: {
-    footerText: "Ce convertisseur HEIC fonctionne 100% dans votre navigateur. Aucune image n'est envoyée vers un serveur cloud. Vos données restent privées.",
-    footerCopyright: "BulkHEIC - Le standard de la conversion locale."
+    footerCopyright: "bulkheic - Le standard de la conversion locale.",
+    descriptionTitle: "Convertir HEIC en JPG en ligne - Gratuit, Illimité et Sécurisé",
+    descriptionText: `Pourquoi utiliser bulkheic ?
+Contrairement aux autres convertisseurs, bulkheic fonctionne entièrement sur votre ordinateur. Vos photos personnelles ne sont jamais envoyées sur un serveur (Cloud). Tout se passe dans votre navigateur, ce qui garantit une confidentialité totale et une vitesse de conversion maximale.
+
+Comment ça marche ?
+1. Glissez vos fichiers .heic (iPhone/iPad).
+2. Le convertisseur transforme instantanément les images en JPG ou PNG.
+3. Téléchargez un fichier ZIP unique contenant toutes vos photos.
+
+Est-ce gratuit ?
+Oui, l'outil est 100% gratuit et sans limite de nombre. Vous pouvez convertir 50 ou 500 photos d'un coup.`
   }
 };
