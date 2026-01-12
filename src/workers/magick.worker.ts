@@ -4,12 +4,22 @@ import {
     MagickFormat,
 } from '@imagemagick/magick-wasm';
 
-const WASM_LOCATION = '/magick.wasm';
+// Détection intelligente du chemin WASM
+// En prod, le worker est dans assets/, le wasm est à la racine (../magick.wasm)
+// En dev, c'est servi depuis la racine /magick.wasm
+const isProd = import.meta.env.PROD;
+const WASM_LOCATION = isProd
+    ? new URL('../magick.wasm', import.meta.url).href
+    : '/magick.wasm';
 
 // Initialisation unique
 const initPromise = (async () => {
     try {
-        const wasmBytes = await fetch(WASM_LOCATION).then(res => res.arrayBuffer());
+        console.log('Worker: Loading WASM from', WASM_LOCATION);
+        const wasmBytes = await fetch(WASM_LOCATION).then(res => {
+            if (!res.ok) throw new Error(`Failed to fetch WASM: ${res.statusText}`);
+            return res.arrayBuffer();
+        });
         await initializeImageMagick(wasmBytes);
         console.log('Magick Worker: Initialized');
     } catch (err) {
